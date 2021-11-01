@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tela">
+        <div id="player" class="jogador"></div>
+        <div id="ball" class="bola"></div>
+        <div id="enemy" class="inimigo"></div>
+    </div>
+</body>
+<script>
+    const player = document.getElementById("player");
+    const ball = document.getElementById("ball");
+    const enemy = document.getElementById("enemy");
+
+    player.addEventListener("keydown", tecla);
+
+    function tecla() {
+        if (document.onkeydown == 'Keyw') {
+            console.log("tecla w");
+        }
+    }
+
+    
+
+
+</script>
+</html>

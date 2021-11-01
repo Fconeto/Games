@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ball-y: 50%;
+    --ball-x: 50%;
+    --player-y: 50%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #3d3d3d;
+}
+
+.tela {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90vmin;
+    height: 60vmin;
+    background: black;
+    box-shadow: 
+    0 0 0 1vmin inset #361c3b,
+    0 0 0 3vmin inset #000000,
+    0 0 0 4vmin inset #ffffff;
+}
+
+.bola {
+    position: absolute;
+    top: var(--ball-y);
+    left: var(--ball-x);
+    transform: translateY(-50%) translateX(-50%);
+
+    width: 3vmin;
+    height: 3vmin;
+    background: #ffffff;
+}
+
+.jogador {
+    position: absolute;
+    top: var(--player-y);
+    left: 5%;
+    width: 2vmin;
+    height: 10vmin;
+    background: #ffffff;
+    transform: translateY(-50%);
+}
+
+.inimigo {
+    position: absolute;
+    top: var(--player-y);
+    right: 5%;
+    width: 2vmin;
+    height: 10vmin;
+    background: #ffffff;
+    transform: translateY(-50%);
+}
